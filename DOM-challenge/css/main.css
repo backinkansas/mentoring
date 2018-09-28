@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background: rgba(30,185,138,1);
+}
+
+.header__title {
+    text-align: center;
+    font-size: 50px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+    width: 100%;
+}
+
+.form__input {
+    background-color: rgba(30,185,138,1);
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 5px 0;
+    margin: 3px 0;
+}
+
+.form__input--textual {
+    width: 70%;
+}
+
+.form__input--clickable {
+    width: 20%;
+}
+
+#list-tasks {
+    list-style: circle;
+}
+
+.list-item--done {
+    text-decoration: line-through;
+}
