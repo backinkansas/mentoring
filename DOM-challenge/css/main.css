@@ -39,7 +39,7 @@ body {
     width: 20%;
 }
 
-#list-tasks {
+.list {
     list-style: circle;
 }
 
