@@ -1,10 +1,8 @@
 class AbstractRunLength {
 
     constructor(originalData) {
-
         this._originalData = originalData;
         this._output = '';
-
     }
 
     _isEmptyString() {
