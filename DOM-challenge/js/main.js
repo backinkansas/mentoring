@@ -1,26 +1,30 @@
 const form = document.getElementById('form-tasks')
 const taskList = document.getElementById('list-tasks')
-const classDone = 'list-item--done'
+const CLASS_DONE = 'list-item--done'
 
 function classToggle(listItem) {
     listItem.addEventListener('click', function(){
-        if (listItem.classList.contains(classDone)) {
-            listItem.classList.remove(classDone)
+        if (listItem.classList.contains(CLASS_DONE)) {
+            listItem.classList.remove(CLASS_DONE)
         } else {
-            listItem.classList.add(classDone)
+            listItem.classList.add(CLASS_DONE)
         }
     })
 }
 
-function isValid(texto) {
+function isValid(text) {
     const regex = /\S/
-    const notEmpty = regex.test(texto)
+    const notEmpty = regex.test(text)
 
-    if (texto.length > 0 && notEmpty) {
+    if (text.length > 0 && notEmpty) {
         return true
     } else {
         return false
     }
+}
+
+function addToList(newItem) {
+    return taskList.appendChild(newItem)
 }
 
 function buildMarkUp(input) {
@@ -30,9 +34,7 @@ function buildMarkUp(input) {
 
     classToggle(newListItem)
 
-    return function addToList() {
-        taskList.appendChild(newListItem)
-    }
+    return newListItem
 }
 
 function cleanFormField() {
@@ -41,7 +43,7 @@ function cleanFormField() {
 }
 
 function executeViewChange(input) {
-    buildMarkUp(input)()
+    addToList(buildMarkUp(input))
     cleanFormField()
 }
 
