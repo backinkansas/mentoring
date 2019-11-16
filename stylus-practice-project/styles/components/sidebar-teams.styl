@@ -1,0 +1,32 @@
+@import '../helpers/mixins'
+@import '../helpers/variables'
+
+.sidebar__teams::before,
+.sidebar__teams::after {
+    @extend $light-border
+}
+
+.sidebar__teams {
+    margin: 0
+    padding: 10px 0
+
+    &__goback {
+        text-transform: uppercase
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 65px
+
+        a {
+            text-decoration: none
+            color: $color-gray--medium
+        }
+    }
+
+    &--selected {
+        color: $color-pink
+        font-weight: $font-weight--bold
+        font-size: $font-size--medium
+        margin: 10px 0
+    }
+}

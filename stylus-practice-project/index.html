@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>pigeon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+    <section class="topbar">
+        <div class="topbar__projects">
+            <h6 class="topbar__tittle">Project</h6>
+            <div class="dropdown-trigger__container">
+                <p class="dropdown-trigger__container__tittle">All projects</p>
+                <i class="fa fa-angle-down topbar__icon"></i>
+            </div>
+            <div class="dropdown__content">
+                <ul class="dropdown__content__list">
+                    <li class="dropdown__content__list__item">Toggle Interactive</li>
+                    <li class="dropdown__content__list__item">Creddy</li>
+                    <li class="dropdown__content__list__item">Octoplus Group</li>
+                </ul>
+            </div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="topbar__teams">
+            <h6 class="topbar__tittle">Team</h6>
+            <div class="dropdown-trigger__container">
+                <p class="dropdown-trigger__container__tittle">X League</p>
+                <i class="fa fa-angle-down topbar__icon"></i>
+            </div>
+            <div class="dropdown__content">
+                <ul class="dropdown__content__list">
+                    <li class="dropdown__content__list__item">X League</li>
+                    <li class="dropdown__content__list__item">Fusca Azul</li>
+                    <li class="dropdown__content__list__item">Tech Proc</li>
+                </ul>
+            </div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="topbar__user">
+            <img src="./img/avatar.jpeg" alt="" class="topbar__user__avatar">
+        </div>
+    </section>
+
+    <aside class="sidebar">
+        <div class="sidebar__brand">
+            <img src="./img/pigeon.png" alt="Pigeon App logo" class="sidebar__brand__logo">
+        </div>
+
+        <div class="sidebar__teams">
+            <div class="sidebar__teams__goback">
+                <a href="#"><img src="./img/left-arrow.png"></a> 
+                <a href="#">Teams</a>
+            </div>
+            <p class="sidebar__teams--selected">X League</p>
+        </div>
+
+        <div class="sidebar__navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list__item">
+                    <div class="navigation__list__item__container">
+                        <img src="./img/archive.png" alt="Projects icon" class="navigation__list__item__container__icon">
+                    </div>
+                    <a href="">Projects</a>
+                </li>
+                <li class="navigation__list__item" class="navigation__list__item__icon">
+                    <div class="navigation__list__item__container">
+                        <img src="./img/profile.png" alt="Members icon" class="navigation__list__item__container__icon">
+                    </div>
+                    <a href="">Members</a>
+                </li>
+                <li class="navigation__list__item" class="navigation__list__item__icon">
+                    <div class="navigation__list__item__container">
+                        <img src="./img/invoice.png" alt="Billing icon" class="navigation__list__item__container__icon">
+                    </div>
+                    <a href="">Billing</a>
+                </li>
+                <li class="navigation__list__item" class="navigation__list__item__icon">
+                    <div class="navigation__list__item__container">
+                        <img src="./img/settings.png" alt="Settings icon" class="navigation__list__item__container__icon">
+                    </div>
+                    <a href="">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <section class="projects">
+        <div class="projects__container">
+            <h2 class="projects__container__title">Projects</h2>
+            <div class="projects__container__add-button"><p class="projects__container__add-button__icon">+</p></div>
+        </div>
+
+        <ul class="projects__list">
+            <li class="projects__list__item">Toggle Interactive</li>
+            <li class="projects__list__item">Creddy</li>
+            <li class="projects__list__item">Octoplus Group</li>
+        </ul>
+    </section>
+
+    <script src='./js/dropdown.js'></script>
+</body>
+</html>

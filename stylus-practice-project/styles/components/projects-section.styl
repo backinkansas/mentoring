@@ -1,0 +1,59 @@
+@import '../helpers/variables'
+
+.projects {
+    width: 53%
+    color: #26272c
+
+    &__container {
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 200px
+
+        &__title {
+            font-size: $font-size--big
+            font-weight: $font-weight--default
+        }
+
+        &__add-button {
+            background-color: #f7f6fb
+            border-radius: 50%
+            width: 30px
+            height: 30px
+            position: relative
+            box-shadow: $box-shadow
+
+            &__icon {
+                position: absolute
+                left: 10px
+                top: -15px
+                font-size: $font-size--medium
+                font-weight: $font-weight--bold
+                color: #a1a3b7
+            }
+        }
+
+        &__add-button:hover {
+            box-shadow: -1px 3px 6px 1px #a7a1aa, -2px -4px 27px 5px #c9c2cc;
+            cursor: pointer
+        }
+    }
+
+    &__list {
+        display: flex
+        flex-wrap: wrap
+        justify-content: flex-start
+        padding: 0
+        list-style: none
+    
+        &__item {
+            font-weight: $font-weight--bold
+            background-color: $color-lightgray
+            width: 300px
+            padding: 20px 0 20px 20px
+            border-radius: 4px
+            box-shadow: $box-shadow--light
+            margin: 15px 15px 15px 0
+        }
+    }
+}
